@@ -258,10 +258,6 @@ SOFTWARE.
 
 **Aman Sheikh**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Twitter: [@yourhandle](https://twitter.com/yourhandle)
-
 ## 🙏 Acknowledgments
 
 - Font Awesome for the icons
