@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Aman Sheikh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="main-title"><i class="fas fa-music"></i> Music Player</h1>
+        <p class="subtitle">by Aman Sheikh</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Player Section -->
+        <section class="player-section">
+            <div class="player-container">
+                <!-- Album Art -->
+                <div class="album-art-container">
+                    <img id="albumArt" src="assets/images/img01.jpg" alt="Album Art" class="album-art">
+                    <div class="vinyl-effect"></div>
+                </div>
+
+                <!-- Song Info -->
+                <div class="song-info">
+                    <h2 id="songTitle" class="song-title">Select a song to play</h2>
+                    <p id="artistName" class="artist-name">Unknown Artist</p>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <span id="currentTime" class="time">0:00</span>
+                    <div class="progress-bar">
+                        <div id="progress" class="progress-fill"></div>
+                        <div id="progressHandle" class="progress-handle"></div>
+                    </div>
+                    <span id="duration" class="time">0:00</span>
+                </div>
+
+                <!-- Controls -->
+                <div class="controls">
+                    <button id="shuffleBtn" class="control-btn" title="Shuffle">
+                        <i class="fas fa-random"></i>
+                    </button>
+                    <button id="prevBtn" class="control-btn" title="Previous">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button id="playPauseBtn" class="control-btn play-pause-btn" title="Play">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="nextBtn" class="control-btn" title="Next">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <button id="repeatBtn" class="control-btn" title="Repeat Off">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+
+                <!-- Volume Control -->
+                <div class="volume-container">
+                    <i class="fas fa-volume-up volume-icon"></i>
+                    <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="70">
+                    <span id="volumeValue" class="volume-value">70%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Playlist Section -->
+        <section class="playlist-section">
+            <h2 class="playlist-title">
+                <i class="fas fa-list-ul"></i> Playlist
+                <span id="playlistCount" class="playlist-count">9 songs</span>
+            </h2>
+            <div id="playlist" class="playlist">
+                <!-- Songs will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Music Player by Aman Sheikh. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="footer-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="footer-link"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Audio Element (Hidden) -->
+    <audio id="audioPlayer"></audio>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/player.js"></script>
+</body>
+</html>
