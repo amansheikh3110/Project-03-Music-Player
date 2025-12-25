@@ -4,6 +4,8 @@ A modern, feature-rich music player built with vanilla JavaScript, HTML5, and CS
 
 ![Preview](./image.png)
 
+Deployed Link --> https://celadon-caramel-5c2c2a.netlify.app/
+
 ![Music Player](https://img.shields.io/badge/version-2.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![JavaScript](https://img.shields.io/badge/javascript-ES6+-yellow.svg)
